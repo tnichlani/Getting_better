@@ -1,3 +1,6 @@
 # Getting_better
+
 Solved some problems for daily practice-->
-1. CONVERT ANY NUMBER OF SECONDS DOWN TO DAYS, HOURS, MINS, SECS. 
+
+1. Write a Python program to convert seconds to day, hour, minutes and seconds.
+
