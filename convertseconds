@@ -1,6 +1,7 @@
-num_of_seconds = 6489572
+num_of_seconds = " "
 
-# break it all down to seconds and go back up from there 
+# break it all down to seconds 
+
 one_min = 60 # how many seconds in a minute 
 one_hour = 3600 # how many seconds in an hour
 one_day = 86400 # how many seconds in a day
@@ -8,17 +9,23 @@ one_day = 86400 # how many seconds in a day
 num_of_days = num_of_seconds // one_day # get number of days in num_of_seconds
 if num_of_days<=9:
 	num_of_days = '0' + str(num_of_days) # add a 0 before single hours 
+	
 balance_hours = num_of_seconds % one_day # how many hours left after days are gone?
+
 num_of_hours = balance_hours // one_hour # calculate number of hours
 if num_of_hours <=9:
 	num_of_hours = '0' + str(num_of_hours)
+	
 balance_mins = balance_hours % one_hour # how many mins remain after hours are gone?
+
 num_of_mins = balance_mins // one_min # calculate number of mins
 if num_of_mins <= 9:
 	num_of_mins = '0' + str(num_of_mins) 
+	
 balance_seconds = balance_mins % one_min # balance seconds = seconds 
 if balance_seconds <=9:
 	balance_seconds = '0' + str(balance_seconds)
+	
 print('',num_of_days,'days\n',num_of_hours,'hours\n', num_of_mins, 'mins\n', balance_seconds, 'secs')
 
 
