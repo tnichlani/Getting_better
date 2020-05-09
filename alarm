@@ -1,0 +1,7 @@
+#break it down into military time
+
+one_day = 2400 # how many hours in a day
+current_time = 1400 # current time in military hours 
+alarm_length = 5100 # alarm length in military hours
+alarm_time = (current_time + alarm_length) % one_day # get remainder hours using modulo operator 
+print(alarm_time, 'hours') 
